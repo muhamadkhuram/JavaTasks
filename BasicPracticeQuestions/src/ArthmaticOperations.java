@@ -1,4 +1,9 @@
 
+import java.util.Scanner;
+
+
+// take two integers as input and perform arithmetic operations
+
 class ArthmaticOperations {
     public void sum(int a, int b) {
         System.out.println("Sum: " + (a + b));
@@ -21,8 +26,16 @@ class ArthmaticOperations {
     }
 
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
+
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Taking two integers as input
+        System.out.print("Enter first number: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = scanner.nextInt();
 
         ArthmaticOperations operations = new ArthmaticOperations();
 
