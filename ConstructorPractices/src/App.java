@@ -34,5 +34,13 @@ public class App {
         System.out.println("Balance: " + account.balance); // Output: Balance: 0.0
         System.out.println("Account Holder Name: " + account.accountHolderName); // Output: Account Holder Name: Unknown
 
+        // employee object with default constructor, calculateSalary method that adds
+        // 10% to the basic salary
+        Employee employee = new Employee("123", "Khuram", 50000.0);
+        System.out.println("Employee ID: " + employee.id); // Output: Employee ID: 123
+        System.out.println("Employee Name: " + employee.name); // Output: Employee Name: Khuram
+        System.out.println("Employee Salary: " + employee.calculateSalary()); // Output: Employee Salary: 55000.0
+        employee.calculateSalary(); // Output: Employee Salary: 55000.0
+
     }
 }
