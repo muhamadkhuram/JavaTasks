@@ -23,9 +23,16 @@ public class App {
         // Create a Book object using the parameterized constructor
         Book book = new Book("Java Programming", 29.99);
         book.display(); // Output: Title: Java Programming, Price: 29.99
-        // copy 
+        // copy
         Book bookCopy = book.createCopy(book);
         bookCopy.display(); // Output: Title: Java Programming, Price: 29.99
+
+        // Create a BankAccount object using the default constructor
+        BankAccount account = new BankAccount(
+                "23423453242323542", 999999999.9, "Khuram");
+        System.out.println("Account Number: " + account.accountNumber); // Output: Account Number: 00000000
+        System.out.println("Balance: " + account.balance); // Output: Balance: 0.0
+        System.out.println("Account Holder Name: " + account.accountHolderName); // Output: Account Holder Name: Unknown
 
     }
 }
